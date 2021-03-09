@@ -1,0 +1,49 @@
+.game-div{
+  margin: 0 25%;
+}
+
+.game-div img{
+  display: block;
+  width: 521px;
+  margin: 5% auto;
+}
+
+.game-div p{
+  line-height: 25px;
+}
+
+.game-links{
+  display: inline-block;
+  padding: 20px;
+  background-color: rgb(79, 79, 79);
+  margin-top: 2%;
+}
+
+.game-links a{
+  display: block;
+  padding: 2% 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .game-div{
+    margin: 0 15%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .game-div img{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .game-div img{
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .game-div{
+    margin: 0 5%;
+  }
+}

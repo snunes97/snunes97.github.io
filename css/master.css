@@ -1,0 +1,276 @@
+@font-face {
+  font-family: roboto-light;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: roboto-thin;
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  font-family: roboto-light, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(224, 224, 224);
+}
+
+h1{
+  font-size: 4em;
+  font-family: roboto-thin, sans-serif;
+  letter-spacing: 4px;
+}
+
+h3{
+  font-family: roboto-thin;
+  letter-spacing: 4px;
+}
+
+header{
+  background-image: url("../imgs/back1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6% 5%;
+}
+
+header div{
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+
+header h1,h3{
+  margin: 0;
+}
+
+header h3{
+  color: white;
+}
+
+nav{
+  padding: 30px 0 30px 0;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: .9em;
+  display: block;
+  background-color: #357cd4;
+  color: white;
+  letter-spacing: 4px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px grey;
+  border-right: 3px solid #2867b5;
+  border-bottom: 3px solid #2867b5;
+}
+
+nav ul li{
+  display: inline;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  margin: 35px 15% 35px 15%;
+  text-align: center;
+}
+
+.standard-grid{
+  grid-template-columns: 50% 50%;
+  box-shadow: 5px 5px 5px grey;
+  background-color: rgb(79, 79, 79);
+}
+
+.grid-item{
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.standard-grid .grid-item{
+  background-color: rgb(79, 79, 79);
+}
+
+.grid-item img{
+  height: 100%;
+  width: 100%;
+}
+
+.featured-title{
+  font-size: 2em;
+  font-family: roboto-thin, sans-serif;
+}
+
+.section-title{
+  text-align: center;
+  padding: 60px 0 60px 0;
+  font-size: 1.5em;
+}
+
+.grid-item .featured-title{
+  margin: 25% auto 25% auto;
+}
+
+.secondary-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0;
+}
+
+.secondary-container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.secondary-border{
+  width: 100%;
+  position: relative;
+  top: 45%;
+}
+
+.secondary-title{
+  color: black;
+  width: 68%;
+  font-size: 1.5em;
+  font-family: roboto-light;
+  border: 3px solid black;
+  margin: 0 auto;
+}
+
+.secondary-title h3{
+  color: black;
+  border: 2px solid black;
+}
+
+.text-wrapper{
+  margin: 0 20% 0 20%;
+}
+
+.block-highlight{
+  background-color: rgba(79, 78, 79);
+  display: inline-block;
+  padding: 0 5% 10px 5%;
+  color: white;
+  margin-bottom: 35px;
+  width: 90%;
+}
+
+.text-highlight{
+  font-size: 1.4em;
+}
+
+.text-info{
+  margin-bottom: 50px;
+}
+
+.text-info ul{
+  list-style-image: url('../imgs/chevron_bullet.png');
+  list-style-position:inside;
+}
+
+.text-info ul li{
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+  transition: letter-spacing 0.5s;
+}
+
+nav a:hover {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+a:active {
+  color: white;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+footer{
+  background-image: url("../imgs/back1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20%;
+}
+
+footer p{
+  margin: 25px;
+  display: inline-block;
+  border-left: 2px solid white;
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+
+  nav ul li{
+    display: block;
+    padding: 2% 0;
+  }
+
+  .hideable-item{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .secondary-overlay, .secondary-container{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .standard-grid{
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  header h1{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .secondary-title{
+    font-size: 0.9em;
+  }
+}
