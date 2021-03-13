@@ -188,15 +188,25 @@ nav ul li{
   font-size: 1em;
 }
 
-nav a:link {
+.spread-effect:link {
   color: white;
   text-decoration: none;
   transition: letter-spacing 0.5s;
 }
 
-nav a:hover {
+.spread-effect:hover {
   letter-spacing: 5px;
   font-weight: bold;
+}
+
+.project-category{
+  display: block;
+  margin: 50px auto;
+  background-color: rgb(79,79,79);
+  font-size: 2em;
+  text-align: center;
+  padding: 50px;
+  width: 25%;
 }
 
 a:link {

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <title>Random Picker - By Simão Nunes</title>
+  </head>
+
+  <body>
+
+    <div class="grid-container">
+      <div id="input-section">
+        <div id="options-bar">
+          <a class="button option-button add-button" onclick="addInput()">Add Item</a>
+          <a class="button option-button remove-button" onclick="removeInput()">Remove Item</a>
+        </div>
+
+      <div class="input-field" id="item1">
+        <p class="input-text">Item 1:</p>
+        <input type="text" id="input1" name="input1">
+      </div>
+
+      </div>
+
+      <div class="output-section">
+        <div id="result-div">
+          <div class="result-container">
+            <a class="button submit-button" onclick="getRandomItem()">Surprise Me!</a>
+            <p id="result" class="result-text">Waiting for your input ;)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-output">
+      <a class="button small-submit-button" onclick="getRandomItem()">Surprise Me!</a>
+      <div id="mobile-result-container">
+        <p id="mobile-result" class="mobile-result-text">Waiting for your input ;)</p>
+      </div>
+    </div>
+
+    <script src="js/randomscript.js"></script>
+  </body>
+</html>
