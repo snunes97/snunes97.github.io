@@ -15,9 +15,11 @@ function addInput(){
 }
 
 function removeInput(){
-  var rem_input = document.getElementById("item".concat(input_number));
-  rem_input.parentNode.removeChild(rem_input);
-  input_number--;
+  if (input_number > 1){
+    var rem_input = document.getElementById("item".concat(input_number));
+    rem_input.parentNode.removeChild(rem_input);
+    input_number--;
+  }
 }
 
 function getRandomItem() {
