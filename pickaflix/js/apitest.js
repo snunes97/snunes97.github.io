@@ -15,7 +15,7 @@ async function fetchGenres(){
 
 async function fetchMoviesFromGenre(genreId){
 
-    let url = 'http://api.themoviedb.org/3/discover/movie?api_key=' + apiKey + '&language=en-US&with_genres=' + genreId;
+    let url = 'https://api.themoviedb.org/3/discover/movie?api_key=' + apiKey + '&language=en-US&with_genres=' + genreId;
     try {
         let res = await fetch(url);
         let data = await res.json();
@@ -26,7 +26,7 @@ async function fetchMoviesFromGenre(genreId){
 }
 
 async function fetchRandomMovie(genreId,page){
-    let url = 'http://api.themoviedb.org/3/discover/movie?api_key=' + apiKey + '&language=en-US&page=' + page + '&include_adult=false&with_genres=' + genreId;
+    let url = 'https://api.themoviedb.org/3/discover/movie?api_key=' + apiKey + '&language=en-US&page=' + page + '&include_adult=false&with_genres=' + genreId;
     try {
         let res = await fetch(url);
         return await res.json();
