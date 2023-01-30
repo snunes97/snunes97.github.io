@@ -112,9 +112,12 @@ async function pickMovie(){
         let randomGenre = genres[Math.floor(Math.random() * genres.length)]
 
         fetchMoviesFromGenre(randomGenre).then(data => {
+            console.log("DATA: " + data)
             let randomPage = Math.floor(Math.random() * data[0])
-            fetchRandomMovie(randomGenre, randomPage).then(data => {
+            console.log("RND PAGE: " + randomPage)
+            fetchRandomMovie(randomGenre, randomPage < 500 ? randomPage: 499).then(data => {
                 let moviesArray = data.results
+                console.log(moviesArray)
                 let randomMovie = moviesArray[Math.floor(Math.random() * moviesArray.length)]
                 console.log(randomMovie)
                 let movieYear = randomMovie.release_date.split("-")[0]
